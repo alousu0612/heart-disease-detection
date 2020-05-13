@@ -32,9 +32,13 @@ The names and social security numbers of the patients were recently removed from
 ### Errors
 
 + cp: chest pain type
+ 
  -- Value 0: asymptomatic 
+ 
  -- Value 1: atypical angina 
+ 
  -- Value 2: non-anginal pain 
+ 
  -- Value 3: typical angina
 
 restecg: resting electrocardiographic results -- Value 0: showing probable or definite left ventricular hypertrophy by Estes' criteria -- Value 1: normal -- Value 2: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV)
