@@ -32,22 +32,44 @@ The names and social security numbers of the patients were recently removed from
 ### Errors
 
 + cp: chest pain type
- 
- -- Value 0: asymptomatic 
- 
- -- Value 1: atypical angina 
- 
- -- Value 2: non-anginal pain 
- 
- -- Value 3: typical angina
 
-restecg: resting electrocardiographic results -- Value 0: showing probable or definite left ventricular hypertrophy by Estes' criteria -- Value 1: normal -- Value 2: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV)
+    -- Value 0: asymptomatic 
 
-slope: the slope of the peak exercise ST segment 0: downsloping; 1: flat; 2: upsloping
+    -- Value 1: atypical angina 
 
-thal: 1 = fixed defect; 2 = normal; 7 = reversable defect
+    -- Value 2: non-anginal pain 
 
-target (maybe THE most important feature): 0 = disease, 1 = no disease
+    -- Value 3: typical angina
+
++ restecg: resting electrocardiographic results 
+
+    -- Value 0: showing probable or definite left ventricular hypertrophy by Estes' criteria 
+
+    -- Value 1: normal 
+
+    -- Value 2: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV)
+
++ slope: the slope of the peak exercise ST segment 
+
+     -- Value 0: downsloping
+
+     -- Value 1: flat
+
+     -- Value 2: upsloping
+
++ thal: thallium defect
+
+     -- Value 0 = normal
+
+     -- Value 1 = reversable defect
+
+     -- Value 2 = fixed defect
+
++ target: heart disease
+
+     -- Value 0 = disease
+
+     -- Value 1 = no disease
 
 A few more things to consider: data #93, 139, 164, 165 and 252 have ca=4 which is incorrect. In the original Cleveland dataset they are NaNs (so they should be removed) data #49 and 282 have thal = 0, also incorrect. They are also NaNs in the original dataset.
 
